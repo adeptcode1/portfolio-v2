@@ -1,0 +1,17 @@
+App
+│
+└── Home
+      │
+      ├── Navbar
+      │
+      ├── Hero
+      │
+      ├── About
+      │
+      ├── Skills
+      │
+      ├── Projects
+      │
+      ├── Contact
+      │
+      └── Footer

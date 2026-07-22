@@ -1,10 +1,39 @@
+import HeroButtons from "./HeroButtons";
+import TechStack from "./TechStack";
+import "../../styles/hero.css";
+import profile from "../../assets/images/profile/profile.png";
+import { portfolio } from "../../data/portfolio";
+
 function Hero() {
     return (
-        <section>
-            <h1>Automation. Development. Solutions.</h1>
-            <p>
-                I build modern web applications that automate business processes and help companies work smarter.
-            </p>
+        <section id="home" className="hero">
+            <div className="hero-container">
+                {/* Left Column */}
+                <div className="hero-content">
+                    <p className="hero-intro">
+                        {portfolio.intro}
+                    </p>
+                    <h1 className="hero-name">{portfolio.name}</h1>
+
+                    <h2 className="hero-title">
+                        {portfolio.headline.map(word => (
+                            <span key={word}>
+                                {word}
+                            </span>
+                        ))}
+                    </h2>
+
+                    <p className="hero-description">{portfolio.description}</p>
+
+                    <HeroButtons />
+                    <TechStack />
+                </div>
+                
+                {/*Right Column */}
+                <div className="hero-image">
+                    <img src={profile} alt="Christopher Schaeffer" className="hero-photo"/>
+                </div>
+            </div>
         </section>
     );
 }
