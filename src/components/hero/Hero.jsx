@@ -1,7 +1,7 @@
 import HeroButtons from "./HeroButtons";
 import TechStack from "./TechStack";
 import "../../styles/hero.css";
-import profile from "../../assets/images/profile/profile.png";
+import { profile } from "../../assets";
 import { portfolio } from "../../data/portfolio";
 
 function Hero() {
