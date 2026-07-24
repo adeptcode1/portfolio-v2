@@ -1,40 +1,48 @@
 import "../../styles/navbar.css";
+import { logo } from "../../assets"
 function Navbar() {
-    const links = [
-        "Home",
-        "About",
-        "Projects",
-        "Skills",
-        "Contact",
-    ];
+  const links = [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
+    { label: "Experience", href: "#experience" },
+    { label: "Contact", href: "#contact" },
+  ];
 
-    return (
-        <header className="navbar">
-            <div className="container">
-                <div className="logo">
-                    <span className="logo-text">
-                        Christopher Schaeffer
-                    </span>
-                </div>
+  return (
+    <header className="navbar">
+      <div className="navbar-container">
+        <a href="#home" className="navbar-brand" aria-label="Go to homepage">
+          <span className="brand-mark">
+            <img src={logo} />
+          </span>
 
-                <nav>
-                    <ul className="nav-links">
-                        {links.map(link => (
-                            <li key={link}>
-                                <a href={`#${link.toLowerCase()}`}>
-                                    {link}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
+          <span className="brand-name">
+            Christopher <strong>Schaeffer</strong>
+          </span>
+        </a>
 
-                <button className="resume-button">
-                    Download Résumé
-                </button>
-            </div>
-        </header>
-    );
+        <nav className="navbar-nav" aria-label="Primary navigation">
+          <ul className="nav-links">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <a
+          href="/resume.pdf"
+          className="navbar-resume"
+          download
+        >
+          Download Résumé
+        </a>
+      </div>
+    </header>
+  );
 }
 
 export default Navbar;

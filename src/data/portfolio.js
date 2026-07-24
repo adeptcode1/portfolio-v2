@@ -9,7 +9,7 @@ export const portfolio = {
     ],
 
     description:
-        "I build modern web applications, automate business processes, and create software that helps organizations work smarter through practical technology solutions.",
+        "I build modern web applications, automate business processes, and create software that helps organizations and individuals work smarter through practical technology solutions.",
 
     tech: [
         "React",

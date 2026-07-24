@@ -1,13 +1,20 @@
 function HeroButtons() {
     return (
         <div className="hero-buttons">
-            <button>
+            <a 
+                href="#projects"
+                className="hero-button hero-button-primary"
+            >
                 View Projects
-            </button>
+            </a>
 
-            <button>
+            <a
+                href="/resume.pdf"
+                className="hero-button hero-button-secondary"
+                download
+            >
                 Download Résumé
-            </button>
+            </a>
         </div>
     );
 }
