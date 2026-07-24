@@ -1,0 +1,34 @@
+# ADR-003
+
+## Title
+
+Component-based Hero Architecture
+
+## Status
+
+Accepted
+
+## Context
+
+The hero section contains several distinct UI elements that may evolve independently.
+
+## Decision
+
+Split the hero into smaller components:
+
+- Hero
+- HeroButtons
+- TechStack
+
+## Consequences
+
+Positive
+
+- Easier maintenance
+- Better reusability
+- Smaller components
+- Simpler testing
+
+Negative
+
+- Slightly more files

@@ -6,10 +6,12 @@
 - [x] Folder structure
 - [x] Navigation
 - [x] Hero Layout
-- [x] Hero Buttons
+- [x] CTA Buttons
 - [x] Tech Stack
+- [x] Responsive Navigation
 - [x] Portfolio Data Model
-- [ ] Hero Styling
+- [x] Hero Styling
+- [x] Portfolio Data Architecture
 - [ ] Hero Animations
 - [ ] About
 - [ ] Skills
