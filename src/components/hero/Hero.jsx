@@ -11,19 +11,19 @@ function Hero() {
                 {/* Left Column */}
                 <div className="hero-content">
                     <p className="hero-intro">
-                        {portfolio.intro}
+                        {portfolio.hero.intro}
                     </p>
                     <h1 className="hero-name">{portfolio.name}</h1>
 
                     <h2 className="hero-title">
-                        {portfolio.headline.map(word => (
+                        {portfolio.hero.headline.map(word => (
                             <span key={word}>
                                 {word}
                             </span>
                         ))}
                     </h2>
 
-                    <p className="hero-description">{portfolio.description}</p>
+                    <p className="hero-description">{portfolio.hero.description}</p>
 
                     <HeroButtons />
                     <TechStack />

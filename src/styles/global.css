@@ -27,3 +27,7 @@ button {
     cursor: pointer;
     font: inherit;
 }
+
+section {
+    scroll-margin-top: 76px;
+}

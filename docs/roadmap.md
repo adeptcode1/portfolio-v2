@@ -10,8 +10,11 @@
 - [x] Tech Stack
 - [x] Responsive Navigation
 - [x] Portfolio Data Model
+- [x] Hero Layout
 - [x] Hero Styling
 - [x] Portfolio Data Architecture
+- [x] Desktop navigation
+- [x] Mobile Navigation
 - [ ] Hero Animations
 - [ ] About
 - [ ] Skills
