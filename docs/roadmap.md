@@ -16,8 +16,8 @@
 - [x] Desktop navigation
 - [x] Mobile Navigation
 - [ ] Hero Animations
-- [ ] About
-- [ ] Skills
+- [x] About
+- [x] Skills
 - [ ] Projects
 - [ ] Contact
 - [ ] Footer

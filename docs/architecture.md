@@ -63,3 +63,22 @@ Displays technology badges.
 portfolio.js
 
 Acts as the single source of truth for portfolio content.
+
+## Skills Architecture
+
+The Skills section follows the same architecture established by the Hero and About sections.
+
+Portfolio Data
+│
+▼
+Skills.jsx
+│
+▼
+SkillCategory.jsx
+│
+▼
+SkillItem.jsx
+
+Each layer has a single responsibility.
+
+Data remains centralized within portfolio.js while presentation is delegated to reusable components.
